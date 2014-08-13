@@ -9,12 +9,13 @@ body{font-size: 12px;font-family: "lucida Grande",Verdana;}
 .headerlink{margin: 16px 0px 0px 205px;padding-right: 40px;line-height: 30px;text-align: right;color: #B6B6B6;background: none repeat scroll 0% 0% transparent;border-radius: 4px;float: right;}
 .headerlink li{display: inline;}
 .headerlink a{padding: 0px 4px;color: #1D5494;text-decoration: none;}
+.headerlink a:hover{text-decoration: underline;}
 
 
 #Content{width: 960px;margin:0px auto;padding: 0px 22px; height: 375px;height: }
-.ContentL{width: 530px;background-color: #fff;height: 372px;position: relative;margin-left: 15px;border: 1px solid #ccc;float: left;}
-.ContentL1{float: none;position: absolute;right: 10px;bottom:0px;z-index: 1;float: right;}
-.ContentL2{margin-top: 25px;padding-left: 0px;z-index: 2;float: left;}
+.ContentL{width: 530px;background-color: #fff;height: 372px;position: relative;margin-left: 15px;float: left;}
+.ContentL1{float: none;position: absolute;right: 10px;bottom:0px;z-index: 1;float: right;z-index: 1;}
+.ContentL2{position: absolute;margin-top: 25px;padding-left: 0px;z-index: 2;float: left;z-index: 5;}
 .ContentL2 h1{font-size: 24px;line-height: 26px;padding-top: 5px;margin-top: 10px;margin: 15px 15px 15px 0px;font-weight: normal;color: #6F95C8;float: left;}
 .ContentL2 p{font-weight: normal;font-size: 14px;line-height: 24px;display: block;}
 .ContentL2 a{text-decoration: none;display: block;margin-top: 15px;}
@@ -29,9 +30,11 @@ body{font-size: 12px;font-family: "lucida Grande",Verdana;}
 .switch1{height: 46px;position: absolute;bottom: 0px;font-size: 16px;left: 0px;}
 #kuaisu{margin-right: 60px;cursor: pointer;}
 .kuaisu-btn{color: #999;display: inline-block;height: 45px;line-height: 45px;outline: 0px none;float: left;}
+.kuaisu-btn:hover{color: #333;}
 .switch a{text-decoration: none;}
 .switch2{height: 46px;position: absolute;bottom: 0px;font-size: 16px;right: 0px;}
-.zhanghao{color: #333;display: inline-block;height: 45px;line-height: 45px;outline: 0px none;float: right;cursor: pointer;}
+.zhanghao{color: #999;display: inline-block;height: 45px;line-height: 45px;outline: 0px none;float: right;cursor: pointer;}
+.zhanghao:hover{color: #333;}
 #A{width: 334px;height: 50px;border-bottom: 1px solid #c0cdd9;}
 
 
@@ -56,7 +59,7 @@ body{font-size: 12px;font-family: "lucida Grande",Verdana;}
 .U{top: 12px;position: absolute;left: 13px;font-size: 14px;line-height: 16px;color: #AAA;cursor: text;}
 .inputOuter{background: none repeat scroll 0% 0% transparent;border: 2px solid #4892E7;height: 38px;width: 282px;border-radius: 2px;border: 0px none;}
 .inputstyle{top: 0px;padding: 10px 40px 10px 10px;left: 0px;border-radius: 3px;width: 282px;position: relative;height: 38px;line-height: 22px;color: #333;background: none repeat scroll 0px center transparent;font-size: 16px;font-family: Verdana,Tahoma,Arial;background: none repeat scroll 0px center transparent;}
-.B3{float: right;height: 24px;text-align: right;line-height: 20px;position: absolute;right: 10px;display: block;margin-top: 60px;}
+.B3{float: right;height: 24px;text-align: right;line-height: 20px;position: absolute;right: 10px;display: block;margin-top: 62px;}
 .B3 a{color: #225592;margin-right: 10px;margin-left: 10px;}
 .B3 a:hover{text-decoration: underline;}
 .pwdArea{height: 50px;position: relative;margin-left: 10px;margin-top: 10px;} 
@@ -72,7 +75,8 @@ body{font-size: 12px;font-family: "lucida Grande",Verdana;}
 .footerlink{line-height: 34px;margin: 0 auto;padding: 0 32px;width: 960px;height: inherit;margin-left: 300px;}
 .footerlink li{ width:71;height: 16px; float: left;display: inline;}
 .footerlink a{padding: 0 4px;color: #1D5494;text-decoration: none;}
+.footerlink a:hover{text-decoration: underline;}
 
 
-
+.C1,.C2,.C3,.C4,.C5,.C6{display: none;}
 

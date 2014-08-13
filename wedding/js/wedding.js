@@ -68,6 +68,8 @@ $(function(){
 	$(".P3").mouseleave(function(){
 		$(".P4").animate({"opacity":"0.7"},100);
 	});
+
+	
 });
 
 //倒计时
