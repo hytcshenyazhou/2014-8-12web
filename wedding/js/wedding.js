@@ -69,6 +69,11 @@ $(function(){
 		$(".P4").animate({"opacity":"0.7"},100);
 	});
 
+
+	$(".btn").click(function(){
+		index=$(this).attr("picindex");
+		showImage();
+	});
 	
 });
 

@@ -58,7 +58,7 @@ body{font-size: 12px;font-family: "lucida Grande",Verdana;}
 .uinArea{height: 50px;position: relative;margin-left: 10px;margin-top: 30px;} 
 .U{top: 12px;position: absolute;left: 13px;font-size: 14px;line-height: 16px;color: #AAA;cursor: text;}
 .inputOuter{background: none repeat scroll 0% 0% transparent;border: 2px solid #4892E7;height: 38px;width: 282px;border-radius: 2px;border: 0px none;}
-.inputstyle{top: 0px;padding: 10px 40px 10px 10px;left: 0px;border-radius: 3px;width: 282px;position: relative;height: 38px;line-height: 22px;color: #333;background: none repeat scroll 0px center transparent;font-size: 16px;font-family: Verdana,Tahoma,Arial;background: none repeat scroll 0px center transparent;}
+.inputstyle{top: 0px;padding: 10px 40px 10px 10px;left: 0px;border-radius: 3px;width: 282px;position: relative;height: 40px;line-height: 30px;color: #333;background: none repeat scroll 0px center transparent;font-size: 15px;font-family: Verdana,Tahoma,Arial;background: none repeat scroll 0px center transparent;}
 .B3{float: right;height: 24px;text-align: right;line-height: 20px;position: absolute;right: 10px;display: block;margin-top: 62px;}
 .B3 a{color: #225592;margin-right: 10px;margin-left: 10px;}
 .B3 a:hover{text-decoration: underline;}
