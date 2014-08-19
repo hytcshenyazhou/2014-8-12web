@@ -3,9 +3,9 @@ img{border: 0;}
 a{text-decoration: none;}
 li{list-style: none;}
 
-body{background-image: url("../images/19.jpg");}
+body{background-image: url("../images/19.jpg");background-repeat: no-repeat;background-size: 100%;overflow: hidden;}
 .wrap{width: 1010px;height: 100%;margin: 0 auto;}
-.main_container{width: 280px;height: 100%;float: left;border: 1px solid #ccc;float: left;}
+.main_container{width: 280px;height: 100%;float: left;float: left;}
 
 .header{display: block;width: 280px;height: 78px;position: relative;}
 #headerPic{width: 40px;height:40px;margin:8px;margin-bottom: 28px;float: left;background-color: red;}
@@ -68,14 +68,10 @@ body{background-image: url("../images/19.jpg");}
 .panel{display: block;width: 700px;height: 100%;position: absolute;top: 78px;left: 0px;}
 .chat-panel {width: 700px; height: 84%;top: 14%;float: left;margin-left: 500px;}
 .hear1{z-index: 99;width: 700px;position: absolute;top: 0px;left: 0px;height: 45px;float: left;margin-left: 0px;border: 1px solid #1A1919;background: linear-gradient(#555, #222) repeat scroll 0% 0% transparent;border-radius: 6px 6px 0 0;color: #fff;}
-.footer1{width: 700px;height: 45px;float: left;margin-left: 0px;border: 1px solid #1A1919;background: linear-gradient(#555, #222) repeat scroll 0% 0% transparent;border-radius: 0 0 6px 6px;color: #fff;position: absolute;bottom: 22px;}
 .Button1{cursor: pointer;width: 45px;height: 19px;border: 1px solid #1A1919;float: left;text-align: left;padding: 6px 10px 6px 10px;margin-top: 6px;margin-left: 15px;border-radius: 5px;}
 .sanjiao{display: block;width: 15px;height: 14px;background-image: url("../images/pannel-arrow-down.png");background-size: 100%;}
 .close{margin-right: 10px;float: left;margin-left: 20px;float: right;cursor: pointer;width: 45px;height: 19px;border: 1px solid #1A1919;text-align: center;padding: 6px 10px 6px 10px;margin-top: 6px;border-radius: 5px;font-size: 16px;}
 .min{float: right;cursor: pointer;width: 60px;height: 19px;border: 1px solid #1A1919;text-align: center;padding: 6px 10px 6px 10px;margin-top: 6px;border-radius: 5px;font-size: 16px;}
-.smile{cursor: pointer;width: 30px;height: 30px;float: left;margin-left: 10px;margin-top: 7px;background-image: url("../images/chat_bottombar_icon_face.png");background-size: 100%;}
-.chatting{width: 530px ;height: 30px;margin-left: 35px;margin-top: 7px;border-radius: 6px;line-height: 35px;text-align: left;}
-.send{cursor:pointer;width: 45px;height: 17px;border: 1px solid #1A1919;float: right;text-align: center;padding: 6px 10px 6px 10px;margin-top: 7px;margin-right: 15px;border-radius: 5px;font-size: 16px;}
 
 .List li{padding: 5px;font-size: 16px;height: 29px;border-bottom: 1px solid #ccc;width: 232px;text-align: left;font-weight: 400;padding-left: 25px;line-height: 29px;}
 
@@ -156,20 +152,6 @@ body{background-image: url("../images/19.jpg");}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /******右边*******/
 .In1-a{width: 700px;height: 80px;margin-top: 45px;background: none repeat scroll 0% 0% #3C3C3C;box-shadow: 0px 2px 5px #141111;transition: top 0.2s ease-out 0s;z-index: 70;}
 .In1{width: 80px;height: 80px;float: left;background: linear-gradient(#4E4E4E, #2C2C2C) repeat scroll 0% 0% transparent;border-right: 1px solid #222;border-left: 1px solid #555;cursor: pointer;color: #FFF;text-align: center;}
@@ -182,15 +164,51 @@ body{background-image: url("../images/19.jpg");}
 
 .In1-a,.In1-b,.In1-c{display: none;}
 
-.chatContent{width: 700px ;height: 415px;position: absolute;top: 45px;left: 0px;border: 1px solid #ccc;background-color: #fff;z-index: 30;}
+.chatContent{width: 700px ;height: 415px;position: absolute;top: 45px;left: 0px;background-color: #fff;z-index: 30;position: absolute;}
 
-.people{width: 200px;height:30px;margin: 5px; margin-left: 150px;float:left;text-align: center;border-radius: 7px;line-height: 30px;}
+.people{width: 400px;height:30px;margin: 5px; margin-left: 25px;float:left;text-align: center;border-radius: 7px;line-height: 30px;}
 
 
 .chatContent ul{width: 700px;height: inherit;overflow: auto;}
-.chatContent li{display: block;height: 40px;width: inherit;float: right;margin-right: 5px;padding: 10px 0px 10px 0px;line-height: 40px;font-size: 20px;font-weight: bold;margin-top: 5px;border-radius: 10px;width: 670px;text-align: right;}
+.chatContent li{display: block;height: 40px;width: inherit;float: right;margin-right: 5px;padding: 10px 0px 10px 0px;line-height: 40px;font-size: 20px;font-weight: bold;margin-top: 0px;border-radius: 10px;width: 670px;text-align: right;}
 .senduserimg{width: 40px;height: 40px;float: right;border: 1px solid #ccc;border-radius: 50%;}
 .wenzi{margin-right: 10px;border: 1px solid #ccc;padding: 5px 10px;background-color: red;border-radius: 15px;}
+
+.qqface{width: 700px;float: left;margin-top: 455px;z-index: 199;position: absolute;}
+.footer1{width: 700px;height: 45px;float: left;margin-left: 0px;border: 1px solid #1A1919;background: linear-gradient(#555, #222) repeat scroll 0% 0% transparent;border-radius: 0 0 6px 6px;color: #fff;}
+.smile{cursor: pointer;width: 30px;height: 30px;float: left;margin-left: 10px;margin-top: 7px;background-image: url("../images/chat_bottombar_icon_face.png");background-size: 100%;}
+.chatting{width: 530px ;height: 30px;margin-left: 35px;margin-top: 7px;border-radius: 6px;line-height: 35px;text-align: left;}
+.send{cursor:pointer;width: 45px;height: 17px;border: 1px solid #1A1919;float: right;text-align: center;padding: 6px 10px 6px 10px;margin-top: 7px;margin-right: 15px;border-radius: 5px;font-size: 16px;}
+.biaoqing{width: 700px;height: 310px;float: left;margin-top: 0px;display: none;}
+
+.biaoqing1{width: 700px;height: 290px;display: block;margin-top: 0px;}
+.biao1{background-image: url("../images/biaoqing1.jpg");width: 700px;height: 290px;float: left;background-position: -10px 0px;}
+.biao2{background-image: url("../images/biaoqing2.jpg");width: 700px;height: 290px;float: left;background-position: -10px 0px;}
+.biao3{background-image: url("../images/biaoqing3.jpg");width: 700px;height: 290px;float: left;background-position: -10px 0px;}
+.biao4{background-image: url("../images/biaoqing4.jpg");width: 700px;height: 290px;float: left;background-position: -10px 0px;}
+.biao5{background-image: url("../images/biaoqing5.jpg");width: 700px;height: 290px;float: left;background-position: -10px 0px;}
+.biao6{background-image: url("../images/biaoqing6.jpg");width: 700px;height: 290px;float: left;background-position: -10px 0px;}
+.biaoqing2{width: 700px;height: 25px;margin-top: 0px;display: block;margin-bottom: 1px;background: none repeat scroll 0% 0% rgba(34, 34, 34, 0.7);border-radius: 0 0 5px 5px;}
+.biaoqing2-1{display: block;width: 300px;height: 15px;margin-left: 290px;float: left;text-align: center;font-size: 12px;}
+.round{cursor: pointer;width: 15px;height: 15px;border-radius: 50%;line-height: 15px;float: left;margin: 5px 10px 0 0 ;background: none repeat scroll 0% 0% #808080;}
+.z1{width: 98px;height: 90px;display: block;float: left;display: block;cursor: pointer;border: 1px solid #ccc;}
+.z1:hover{border: 1px solid red;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

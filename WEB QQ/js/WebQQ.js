@@ -86,7 +86,7 @@ $(function(){
 		var name=$(this).find(".friendnick").attr("name");
 		var z=$(this).find(".friendnick").attr("kai");
 		var y=$(this).attr("friendid");
-				html +=			'<div class="panel chat-panel " id="frm'+y+'" >'
+				html +=			'<div class="panel chat-panel " id="frm'+y+'">'
 				html +=				'<div class="hear1">'
 				html +=					'<div class="Button1" Button-s="1">'
 				html +=						'<span class="sanjiao"></span>'
@@ -95,7 +95,7 @@ $(function(){
 				html +=					'<div class="close" parentid="frm'+y+'">'
 				html +=						'关闭'
 				html +=					'</div>'
-				html +=					'<div class="min">'
+				html +=					'<div class="min" bj="1">'
 				html +=						'最小化'
 				html +=					'</div>'
 				html +=				'</div>'
@@ -144,19 +144,72 @@ $(function(){
 				html+=				'<div class="chatContent">'
 				html+=					'<ul class="fff"></ul>'
 				html+=				'</div>'
-				html+=				'<div class="footer1">'
-				html+=					'<div class="smile"></div>'
-				html+=					'<input type="text" class="chatting">'									
-				html+=					'<div class="send">发送</div>'
+				html+=				'<div class="qqface" by="1">'
+				html+=					'<div class="footer1">'
+				html+=						'<div class="smile"></div>'
+				html+=						'<input type="text" class="chatting">'									
+				html+=						'<div class="send">发送</div>'
+				html+=					'</div>'	
+				html+=					'<div class="biaoqing">	'				
+				html+=						'<div class="biaoqing1">'
+				html+=								'<li class="biao1">'
+				html+=									'<div class="z1" href="javascript:;" title="微笑"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="撇嘴"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="色"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="发呆"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="得意"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="流泪"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="害羞"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="闭嘴"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="睡"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="大哭"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="尴尬"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="发怒"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="调皮"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="呲牙"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="惊讶"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="难过"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="酷"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="冷汗"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="抓狂"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="吐"></div>'
+				html+=									'<div class="z1" href="javascript:;" title="delKey"></div>'
+				html+=								'</li>'
+				html+=						'</div>'					
+				html+=						'<ul class="biaoqing2">'
+				html+=								'<div class="biaoqing2-1">'				
+				html+=									'<li class="round">1</li>'
+				html+=									'<li class="round">2</li>'
+				html+=									'<li class="round">3</li>'
+				html+=									'<li class="round">4</li>'
+				html+=									'<li class="round">5</li>'
+				html+=									'<li class="round">6</li>'
+				html+=								'</div>'
+				html+=						'</ul>'
+				html+=					'</div>'		
 				html+=				'</div>'
 				html+=			'</div>'	
 	
 		if (z==1) {
 				$(".wrap").append(html);
-				$(this).find(".friendnick").attr("kai","0");
-				
+				$(this).find(".friendnick").attr("kai","0");				
 		};
-		$(".panel").draggable();
+		$(".panel").draggable({handle:".people"});
+
+/*****会话框弹出****/
+		var html2="";
+		var h=$(this).find(".friendnick").attr("name");
+		var i=$(this).parent().find(".chatting").val();
+
+		html2+=		'<li bk="1" class="bk1">'
+		html2+=			'<div class="qunimg"></div>'
+		html2+=			'<div class="qunming">'+h+'</div>'
+		html2+=			'<div class="quncontent">'+i+'</div>'
+		html2+=		'</li>'
+
+			$(".Listhui").prepend(html2);
+
+
 	});	
 
 /***聊天****/
@@ -177,26 +230,46 @@ $(function(){
 	/******换背景*****/
 	var o=19;
 	$(".pre").click(function(){
-		// var o=$("body").attr("bp");
-		o--;
-		$("body").css("background-image",'url("images/'+o+'.jpg")');
-		// alert(o);
-		if (o<1) {
+		o--
+		if (o==0) {
 			o=19;
-
 		};
-	});
-
-	$(".next").click(function(){
-		
-		o++;
 		$("body").css("background-image",'url("images/'+o+'.jpg")');
-		// alert(o);
-		if (o>19) {
-			o=1;
-
-		};
 	});
+
+	$(".next").click(function(){	
+		o++;		
+		if (o==20) {
+			o=1;
+		};
+		$("body").css("background-image",'url("images/'+o+'.jpg")');
+	});
+
+/*******表情*******/
+				
+		$(document).on("click",".smile",function(){
+			var j=$(".qqface").attr("by");
+			if (j==1) {				
+			$(".biaoqing").css("display","block")
+			$(".qqface").css("margin-top","140px")
+			$(".qqface").attr("by","0")
+			}else
+			{
+			$(".biaoqing").css("display","none")
+			$(".qqface").css("margin-top","455px")
+			$(".qqface").attr("by","1")	
+			};
+		});
+
+
+
+
+/******最小化*******/
+
+
+
+
+
 });
 
 
