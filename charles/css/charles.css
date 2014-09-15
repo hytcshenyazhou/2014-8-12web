@@ -1,0 +1,126 @@
+*{margin: 0px;padding: 0px;}
+img{border: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+input{border:0;}
+input:focus{outline: none;}
+@font-face {
+  font-family: "proximasansregularregular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("proximasansregular-webfont.woff") format("embedded-opentype"), url("proximasansregular-webfont.woff") format("woff"), url("proximasansregular-webfont.woff") format("svg");
+}
+@font-face {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fontawesome-webfont.woff") format("embedded-opentype"), url("fontawesome-webfont.woff") format("woff"), url("fontawesome-webfont.woff") format("truetype");
+}
+
+@font-face {
+  font-family: "proximasansregularregular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("EBGaramond-webfont.woff") format("embedded-opentype"), url("EBGaramond-webfont.woff") format("woff"), url("EBGaramond-webfont.woff") format("truetype"), url("EBGaramond-webfont.woff") format("svg");
+}
+
+#V{width: 100%;height: 100%;position: relative;}
+.home_video{display: block;background: none repeat scroll 0% 0% transparent !important;opacity: 1;position: absolute;z-index: 1;width: 100%;}
+video{min-width: 100%;height: 759px;}
+#entry-logo{display: block;height: 61px;width: 244px;background-image: url("../images/assets@2x.png");background-position: 0px -152px;background-size: 400px;background-repeat: no-repeat;position: absolute;z-index: 2;top: 100px;left: 550px;}
+#V p:before{content: "";display: block;width:70px;margin: 0px auto 28px;border-top: 1px solid #fff;}
+#V p{display: block;width: 700px;color: #fff;font-size: 26px;line-height: 44px;letter-spacing: 0px;text-align: center;opacity: 1;transition:all 0.3s ease 0s;height: 190px;position: absolute;top: 200px;left: 320px;z-index: 2;}
+.scroll{display: block;width: 240px;text-align: center;text-decoration: none;color: #fff;margin: 40px auto;font-family:"proximasansregularregular",sans-serif;font-size: 13px;position: absolute;top: 600px;left: 550px;z-index: 2;font-size: 15px;text-transform: uppercase;letter-spacing: 0.3em;border: 1px solid #ccc;cursor: pointer;}
+.scroll:after{font-family: fontAwesome;content: "\f107";display: block;font-size: 14px;margin-top: 20px;}
+.scroll:hover{height: 70px;}
+
+.title{width: 100%;height: 40px;text-align: center;margin-top: 250px;}
+.title h1{font-family: "proximasansregularregular",sans-serif;font-size: 24px;letter-spacing: 0.3em;text-transform: uppercase;padding-bottom: 60px;margin: 0px;font-weight: normal;display: block;}
+.T1{display: block;}
+h1:after{content: "";display: block;width: 60px;margin: 20px auto 0px;border-top: 1px solid #242424;}
+
+.Work{width: 100%;height: 1030px;display: block;margin-top: 50px;}
+.inner{width: 1228px;margin: 0px auto;height: 915px;margin-top: 10px;}
+.cf:after{content: "";display: table;clear: both;}
+.cc:after{content: "";display: inline-block;vertical-align: middle;width: 0px;height: 100%}
+.heise{content: "";position: absolute;top: 0px;left: 0px;display: block;width: 100%;z-index: 1;transition:all 0.3s ease 0s;opacity: 0.87;height: 100%;background: none repeat scroll 0% 0% #242424;cursor: pointer;}
+.cc .heise:hover{opacity: 0;transition:0.5s;}
+.project:nth-child(3n+1){margin-left: 0px;}
+.project{position: relative;display: block;width: 390px;height: 250px;margin: 10px;background-size: cover!important;float: left;}
+.cc{white-space: nowrap;overflow: hidden;}
+
+.project-text{position: relative;z-index: 2;padding: 0px 80px;text-align: center;transition:all 0.3s ease 0s;opacity: 1;text-align: center;}
+.cc>.ct{display: inline-block;width: 100%;white-space: normal;vertical-align: middle;}
+.project-text>.title{font-family: "proximasansregularregular",serif;font-size: 21px;letter-spacing: 0.3em;color: #FFF;text-transform: uppercase;width: 100%;margin: 100px auto 0px;display: block;}
+.project-text>.type{color: #FFF;font-size: 14px;font-weight: 300;letter-spacing: 0.05em;margin: 10px auto;}
+
+.more-projects-btn{text-align: center;opacity: 1;transition: all 0.3s ease 0s;margin-top: 60px;float: left;width: 100%;}
+.btn.btn-black{color: #242424;border: 1px solid #666;font-size: 12px;letter-spacing: 0.2em;padding: 10px 30px;}
+.btn{display: inline-block;font-family: "proximasansregularregular",sans-serif;text-transform: uppercase;text-decoration: none;transition: all 0.3s ease 0s;cursor: pointer;}
+.btn:hover{color: #fff;background-color: #ff6a6a;}
+
+
+#work_scroll{width: 200px;height: 50px;margin: 10px auto;position: relative;cursor: pointer;margin-top: 20px;}
+.scroll1{display: block;width: 200px;text-align: center;text-decoration: none;color: #fff;font-family:"proximasansregularregular",sans-serif;font-size: 14px;text-transform: uppercase;letter-spacing: 0.3em;color: #242424;padding-top: 10px;}
+.scroll1:after{font-family: fontAwesome;content: "\f107";display: block;font-size: 14px;margin-top: 10px;position: absolute;bottom: 5px;left: 90px;}
+#work_scroll:hover{height: 60px;transition:1s;}
+
+
+
+
+.page-awards{height: 100%;width: 100%;position: relative;}
+.honor-bg{display: block;background-image: url("../images/honor-bg-1.gif");position: absolute;top: 0px;left:0px;z-index: 1; background-position: center !important;background-size: cover !important;background-repeat: no-repeat !important;opacity: 1;transition: 1s;width: 100%;height: 646px;}
+.inner-ctn{display: block;width: 50%;float: left;position: absolute;top: 5px;margin: 5px auto;z-index: 2;left: 320px;color: #fff;padding: 10px;}
+#honor{text-align: center;width: 100%}
+.inner{width: 1280px;margin: 0 auto;margin: 5px auto;}
+#honor h1{text-transform: uppercase;letter-spacing: 0.3em;line-height: 50px;margin-top: 20px;}
+.lead-in{font-family: "proximasansregularregular",sans-serif;text-transform: uppercase;font-size: 15px;line-height: 15px;font-weight: 300;letter-spacing: 0.15em;margin-bottom: 60px;}
+
+
+.to-honor-to-inpire{display: block;text-transform: uppercase;font-style: italic;font-size: 110px;line-height: 95px;margin-bottom: 60px;letter-spacing: 0.1em;}
+.to-honor{text-indent: -60px;}
+.blurb{font-family: "EBGaramondRegular",sans-serif;font-weight: 550;}
+.blurb:after{display: block;width: 680px;content: "";margin: 60px 0px 0px -30px;}
+
+
+#page-client{max-height: 1100px;height: 486px;margin-top: 10px;}
+.display{display: block;width: 100%;padding: 60px 0;position: relative;}
+.display.display-grey{background: none repeat scroll 0% 0% #2C2C2C;color: #FFF;}
+.display.no-height{min-height: 0px;height: auto;}
+
+.display-grey h1{color: #fff;font-family: "proximasansregularregular",sans-serif;text-align: center;text-transform: uppercase;}
+.display-grey h1:after{content: "";display: block;width: 60px;margin: 20px auto 0px;border-top: 1px solid #fff;}
+.img1{width: 1230px;height: 410px;margin: 20px auto;background-image: url("../images/1.png");background-size: 100%;}
+.img2{width: 1141px;height: 285px;margin: 20px auto;background-image: url("../images/2.png");background-size: 100%;}
+.img3{width: 976px;height: 169px;margin: -15px auto;background-image: url("../images/3.png");background-size: 100%;}
+
+
+.journal{width: 100%;height: 300px;}
+.zhaopian{margin: 20px auto;border: 1px solid #ccc;width: 1200px;height: 280px;}
+.zhaopian li{width: 31%;height: 260px;margin: 10px;border: 1px solid #ccc;float: left;border-radius: 10px;display: block;cursor: pointer;position: relative;}
+.ph1{background-image: url("../images/thecharlesnyc_news_10kate2.jpg");background-size: 100%;width: 100%;height: 260px;border-radius: 10px;position: absolute;top: 0;left: 0;}
+.mengban1{background-color: #858585;opacity: 0.6;position: absolute;top: 0;left: 0;width: 100%;height: 260px;border-radius: 10px;}
+.mengban1:hover{opacity: 0;}
+.ph2{background-image: url("../images/thecharlesnyc_news_aetv2.jpg");background-size: 100%;width: 100%;height: 260px;border-radius: 10px;position: absolute;top: 0;left: 0;}
+.mengban2{background-color: #858585;opacity: 0.6;position: absolute;top: 0;left: 0;width: 100%;height: 260px;border-radius: 10px;}
+.mengban2:hover{opacity: 0;}
+.ph3{background-image: url("../images/thecharlesnyc_news_birdwatch3.jpg");background-size: 100%;width: 100%;height: 260px;border-radius: 10px;position: absolute;top: 0;left: 0;}
+.mengban3{background-color: #858585;opacity: 0.6;position: absolute;top: 0;left: 0;width: 100%;height: 260px;border-radius: 10px;}
+.mengban3:hover{opacity: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

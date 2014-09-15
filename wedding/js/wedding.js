@@ -1,27 +1,10 @@
 $(function(){
 	showTime();
 
-
-	// $(".Button").click(function(){
-	// 	currindex=$(this).attr("picindex");
-	// 	showFlashimage();
-	// });
-	// $("#flash").hover(function(){
-	// 	clearInterval(Time1);
-	// },function(){
-	// 	Time1=setInterval("showFlashimage()",1000);
-	// });
-
 	var Time1=setInterval("showFlashimage()",5000);
 
 	$(".Button").click(function(){
 		var	a=$("#TitleList").find(".Button").attr("bu1");
-		//alert(a);
-		//alert("adada");
-		// if(a==1)
-		// {
-		// 	alert("adada");
-		// }
 		if(a==1){
 			$("#TitleList").css("right","0px");
 			$("#TitleList").find(".Button").attr("bu1","0");
@@ -74,6 +57,55 @@ $(function(){
 		index=$(this).attr("picindex");
 		showImage();
 	});
+
+	$(".photo").click(function(){
+		var z=$(this).attr("bk");	
+		$(this).css("z-index","71");		
+		if (z==1) 
+		{
+			$("#photo1").animate({"top":"200","left":"480"},2000);
+			$("#photo1").css("transform","rotate(360deg)");
+			$("#photo2").animate({"top":"200","left":"480"},2000);
+			$("#photo2").css("transform","rotate(360deg)");
+			$("#photo3").animate({"top":"200","left":"480"},2000);
+			$("#photo3").css("transform","rotate(360deg)");
+			$("#photo4").animate({"top":"200","left":"480"},2000);
+			$("#photo4").css("transform","rotate(360deg)");
+			$("#photo5").animate({"top":"200","left":"480"},2000);
+			$("#photo5").css("transform","rotate(360deg)");
+			$("#photo6").animate({"top":"200","left":"480"},2000);
+			$("#photo6").css("transform","rotate(360deg)");
+			$("#photo7").animate({"top":"200","left":"480"},2000);
+			$("#photo7").css("transform","rotate(360deg)");
+			$("#photo8").animate({"top":"200","left":"480"},2000);
+			$("#photo8").css("transform","rotate(360deg)");
+			$(".photo").attr("bk","0");
+		}
+		else
+		{
+			$("#photo1").animate({"top":"100","left":"800"},2000);
+			$("#photo1").css("transform","rotate(30deg)");
+			$("#photo2").animate({"top":"200","left":"200"},2000);
+			$("#photo2").css("transform","rotate(-15deg)");
+			$("#photo3").animate({"top":"300","left":"90"},2000);
+			$("#photo3").css("transform","rotate(15deg)");
+			$("#photo4").animate({"top":"-50","left":"300"},2000);
+			$("#photo4").css("transform","rotate(50deg)");
+			$("#photo5").animate({"top":"50","left":"980"},2000);
+			$("#photo5").css("transform","rotate(10deg)");
+			$("#photo6").animate({"top":"300","left":"700"},2000);
+			$("#photo6").css("transform","rotate(25deg)");
+			$("#photo7").animate({"top":"150","left":"450"},2000);
+			$("#photo7").css("transform","rotate(-20deg)");
+			$("#photo8").animate({"top":"200","left":"1200"},2000);
+			$("#photo8").css("transform","rotate(450deg)");
+			$(".photo").attr("bk","1");
+			$(this).animate({"z-index":""},500);
+		};
+
+	});
+	
+
 	
 });
 
@@ -92,7 +124,7 @@ function showTime(){
 	}
 	year=2014-year;
 	month=month+1;
-	month=11-month;
+	month=12-month;
 	day=30-day;
 	hour=12-hour;
 	minute=10-minute;
@@ -145,6 +177,10 @@ function showFlashimage(){
 	if (currindex==4) {
 		currindex=1;
 	};
+
+
+
+
 
 };
 
