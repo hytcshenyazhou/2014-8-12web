@@ -42,7 +42,7 @@
     <!--
     此网格充当页的根面板。
   -->
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="Chocolate">
         <Grid.ChildrenTransitions>
             <TransitionCollection>
                 <EntranceThemeTransition/>
@@ -71,7 +71,7 @@
                     </Hub.Header>
                     <HubSection Width="780" Margin="0,0,80,0" VerticalContentAlignment="Bottom">
                         <HubSection.Background>
-                            <ImageBrush ImageSource="Images/Hero.png" Stretch="UniformToFill" />
+                            <ImageBrush ImageSource="Images/shanhaijing.png" Stretch="UniformToFill" />
                         </HubSection.Background>
                         <DataTemplate>
                             <TextBlock Text="Salad Week" Style="{StaticResource HeaderTextBlockStyle}" />
@@ -112,7 +112,7 @@
                         </DataTemplate>
                     </HubSection>
                     <HubSection IsHeaderInteractive="True" DataContext="{Binding Section3Items}" d:DataContext="{Binding Groups[3], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}"
-                        x:Uid="Section3Header" Header="Top Rated" Padding="40,40,40,32">
+                        x:Uid="Section3Header" Header="上古凶兽" Padding="40,40,40,32">
                         <DataTemplate>
                             <GridView
                         x:Name="itemGridView"
@@ -177,6 +177,6 @@
                 </GridView>
             </SemanticZoom.ZoomedOutView>
         </SemanticZoom>
-        
+
     </Grid>
 </Page>

@@ -16,7 +16,7 @@
         <CollectionViewSource x:Name="filtersViewSource" Source="{Binding Filters}"/>
         <common:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
         <!-- TODO:  将以下字符串更新为您的应用程序的名称-->
-        <x:String x:Key="AppName">应用程序名</x:String>
+        <x:String x:Key="AppName">Search</x:String> 
     </Page.Resources>
 
     <!--
@@ -84,6 +84,7 @@
                     SelectionMode="None"
                     IsSwipeEnabled="false"
                     IsItemClickEnabled="True"
+                    ItemClick="OnItemClick"
                     ItemsSource="{Binding Source={StaticResource resultsViewSource}}">
                     <GridView.ItemTemplate>
                         <DataTemplate>

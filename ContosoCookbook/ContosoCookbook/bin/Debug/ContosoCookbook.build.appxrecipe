@@ -259,6 +259,9 @@
     <AppxPackagedFile Include="C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\Images\Peppers.jpg">
       <PackagePath>Images\Peppers.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\Images\shanhaijing.jpg">
+      <PackagePath>Images\shanhaijing.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\Images\Tiles\Chinese_6_310_C.jpg">
       <PackagePath>Images\Tiles\Chinese_6_310_C.jpg</PackagePath>
     </AppxPackagedFile>
@@ -333,6 +336,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\Images\Mexican\mexican_group_header.png">
       <PackagePath>Images\Mexican\mexican_group_header.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\Images\shanhaijing.png">
+      <PackagePath>Images\shanhaijing.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\Assets\LargeLogo.scale-100.png">
       <PackagePath>Assets\LargeLogo.scale-100.png</PackagePath>

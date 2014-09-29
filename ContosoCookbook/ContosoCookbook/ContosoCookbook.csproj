@@ -232,6 +232,8 @@
     <Content Include="Images\Mexican\mexican_group_detail.png" />
     <Content Include="Images\Mexican\mexican_group_header.png" />
     <Content Include="Images\Peppers.jpg" />
+    <Content Include="Images\shanhaijing.jpg" />
+    <Content Include="Images\shanhaijing.png" />
     <Content Include="Images\Tiles\Chinese_6_310_C.jpg" />
     <Content Include="Images\Tiles\French_2_310_C.jpg" />
     <Content Include="Images\Tiles\German_4_310_C.jpg" />
@@ -240,6 +242,7 @@
     <Content Include="Images\Vegetables.jpg" />
     <None Include="Common\ReadMe.txt" />
     <None Include="ContosoCookbook_TemporaryKey.pfx" />
+    <None Include="Images\Chinese\Thumbs.db" />
     <None Include="Images\Thumbs.db" />
     <PRIResource Include="Strings\zh-CN\Resources.resw">
       <SubType>Designer</SubType>

@@ -23,7 +23,7 @@ namespace ContosoCookbook.Data
     /// </summary>
     public class SampleDataItem
     {
-        public SampleDataItem(String uniqueId, String title, String subtitle, String imagePath, String description, String content, double preparationTime, double rating, bool favorite, string tileImagePath, ObservableCollection<string> ingredients, SampleDataGroup group)
+        public SampleDataItem(String uniqueId, String title, String subtitle, String imagePath, String description, String content, String preparationTime, double rating, bool favorite, string tileImagePath, ObservableCollection<string> ingredients, SampleDataGroup group)
         {
             this.UniqueId = uniqueId;
             this.Title = title;
@@ -45,7 +45,7 @@ namespace ContosoCookbook.Data
         public string Description { get; private set; }
         public string ImagePath { get; private set; }
         public string Content { get; private set; }
-        public double PreparationTime { get; private set; }
+        public string PreparationTime { get; private set; }
         public double Rating { get; private set; }
         public bool Favorite { get; private set; }
         public string TileImagePath { get; private set; }
@@ -200,7 +200,7 @@ namespace ContosoCookbook.Data
                                                        itemObject["ImagePath"].GetString(),
                                                        itemObject["Description"].GetString(),
                                                        itemObject["Content"].GetString(),
-                                                       itemObject["PreparationTime"].GetNumber(),
+                                                       itemObject["PreparationTime"].GetString(),
                                                        itemObject["Rating"].GetNumber(),
                                                        itemObject["Favorite"].GetBoolean(),
                                                        itemObject["TileImagePath"].GetString(),

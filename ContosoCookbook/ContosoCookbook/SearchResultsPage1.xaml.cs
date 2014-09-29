@@ -17,6 +17,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using ContosoCookbook.Data;
 
 // TODO: 将搜索结果页连接至应用程序内的搜索。
 //“搜索结果页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234240 上有介绍
@@ -28,6 +29,8 @@ namespace ContosoCookbook
     /// </summary>
     public sealed partial class SearchResultsPage1 : Page
     {
+        // Collection of SampleDataGroup instances representing search results
+        private IEnumerable<SampleDataGroup> _results;
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
@@ -78,6 +81,17 @@ namespace ContosoCookbook
 
             var filterList = new List<Filter>();
             filterList.Add(new Filter("All", 0, true));
+            // Search recipes 
+            _results = SampleDataSource.Search(queryText);
+
+            // Initialize total count for the "All" filter
+            filterList[0].Count = _results.SelectMany(p => p.Items).Count();
+
+            // Create additional filters for each group
+            foreach (var group in _results)
+            {
+                filterList.Add(new Filter(group.Title, group.Items.Count, false));
+            }
 
             // 通过视图模型沟通结果
             this.DefaultViewModel["QueryText"] = '\u201c' + queryText + '\u201d';
@@ -111,6 +125,11 @@ namespace ContosoCookbook
 
                 // TODO:  通过将 this.DefaultViewModel["Results"] 设置为具有可绑定的 Image、Title 和 Subtitle 属性的项集合，
                 //       具有可绑定的 Image、Title、Subtitle 和 Description 属性的项的集合
+                var filteredGroup = _results.FirstOrDefault(group => group.Title == selectedFilter.Name);
+                this.defaultViewModel["Results"] = selectedFilter.Name == "All" ?
+                                                    _results.SelectMany(p => p.Items).ToList() :
+                                                    (filteredGroup != null) ? filteredGroup.Items.ToList() : null;
+
 
                 // 确保找到结果
                 object results;
@@ -236,6 +255,12 @@ namespace ContosoCookbook
                 }
             }
 
+        }
+
+        private void OnItemClick(object sender, ItemClickEventArgs e)
+        {
+            // Navigate to the page showing the recipe that was clicked
+            this.Frame.Navigate(typeof(ItemPage), ((SampleDataItem)e.ClickedItem).UniqueId);
         }
     }
 }

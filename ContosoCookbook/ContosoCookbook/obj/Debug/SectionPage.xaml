@@ -25,7 +25,7 @@
         * 第 0 行包含后退按钮和页标题
         * 第 1 行包含页布局的其余部分
     -->
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    <Grid Background="Chocolate"
         DataContext="{Binding Group}"
         d:DataContext="{Binding Groups[5], Source={d:DesignData Source=/DataModel/SampleData.json, Type=data:SampleDataSource}}">
         <Grid.ChildrenTransitions>
@@ -64,12 +64,11 @@
                         <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="10,0,0,0">
                             <TextBlock Text="{Binding Title}" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="NoWrap"/>
                             <TextBlock Style="{StaticResource BodyTextBlockStyle}">
-                                <Run Text="Preparation time:" />
+                                <Run Text="所属种族:" />
                                 <Run Text="{Binding PreparationTime}" />
-                                <Run Text=" minutes" />
                             </TextBlock>
                             <TextBlock Style="{StaticResource BodyTextBlockStyle}">
-                                <Run Text="Rating:" />
+                                <Run Text="吉凶:" />
                                 <Run Text="{Binding Rating}" />
                             </TextBlock>
                         </StackPanel>
@@ -114,9 +113,8 @@
                         <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="10,0,0,0">
                             <TextBlock Text="{Binding Title}" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="NoWrap"/>
                             <TextBlock Style="{StaticResource BodyTextBlockStyle}">
-                        <Run Text="Preparation time:" />
+                        <Run Text="所属派别:" />
                         <Run Text="{Binding PreparationTime}" />
-                        <Run Text=" minutes" />
                             </TextBlock>
                             <TextBlock Style="{StaticResource BodyTextBlockStyle}">
                         <Run Text="Rating:" />

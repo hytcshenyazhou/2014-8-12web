@@ -15,6 +15,9 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.ApplicationModel.DataTransfer;
+using System.Text;
+using Windows.Storage.Streams;
 
 
 // 有关“项页”项模板的信息，请参阅 http://go.microsoft.com/fwlink/?LinkId=234232
@@ -86,6 +89,23 @@ namespace ContosoCookbook
                 VisualStateManager.GoToState(this, "DefaultLayout", true);
             }
         }
+        void OnDataRequested(DataTransferManager sender, DataRequestedEventArgs args)
+        {
+            var request = args.Request;
+            var item = (SampleDataItem)this.DefaultViewModel["Item"];
+            request.Data.Properties.Title = item.Title;
+            request.Data.Properties.Description = "Recipe ingredients and directions";
+
+            // Share recipe text
+            var recipe = "\r\nINGREDIENTS\r\n";
+            recipe += String.Join("\r\n", item.Ingredients);
+            recipe += ("\r\n\r\nDIRECTIONS\r\n" + item.Content);
+            request.Data.SetText(recipe);
+            // Share recipe image
+            var reference = RandomAccessStreamReference.CreateFromUri(new Uri("ms-appx:///" + item.ImagePath));
+            request.Data.Properties.Thumbnail = reference;
+            request.Data.SetBitmap(reference);
+        }
 
         #region NavigationHelper 注册
 
@@ -102,11 +122,15 @@ namespace ContosoCookbook
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             navigationHelper.OnNavigatedTo(e);
+            // Register for DataRequested events
+            DataTransferManager.GetForCurrentView().DataRequested += OnDataRequested;
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             navigationHelper.OnNavigatedFrom(e);
+            // Deregister the DataRequested event handler
+            DataTransferManager.GetForCurrentView().DataRequested -= OnDataRequested;
         }
 
         #endregion

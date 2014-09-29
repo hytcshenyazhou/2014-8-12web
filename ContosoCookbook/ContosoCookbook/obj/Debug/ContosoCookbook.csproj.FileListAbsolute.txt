@@ -42,6 +42,7 @@ c:\users\just\documents\visual studio 2013\Projects\ContosoCookbook\ContosoCookb
 c:\users\just\documents\visual studio 2013\Projects\ContosoCookbook\ContosoCookbook\obj\Debug\ProjectArchitectures.txt
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\bin\Debug\App.xbf
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\bin\Debug\HubPage.xbf
+C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\bin\Debug\SearchResultsPage1.xbf
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\bin\Debug\SectionPage.xbf
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\bin\Debug\ItemPage.xbf
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\bin\Debug\ContosoCookbook.xr.xml
@@ -49,11 +50,12 @@ C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\bin\Debug\ContosoCookbook.
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\bin\Debug\ContosoCookbook.pdb
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\bin\Debug\resources.pri
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\bin\Debug\AppxManifest.xml
-C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\bin\Debug\ContosoCookbook.build.appxrecipe
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\App.g.i.cs
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\App.g.cs
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\HubPage.g.i.cs
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\HubPage.g.cs
+C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\SearchResultsPage1.g.i.cs
+C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\SearchResultsPage1.g.cs
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\SectionPage.g.i.cs
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\SectionPage.g.cs
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\ItemPage.g.i.cs
@@ -61,10 +63,12 @@ C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\ItemPage.g.cs
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\XamlTypeInfo.g.cs
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\App.xaml
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\HubPage.xaml
+C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\SearchResultsPage1.xaml
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\SectionPage.xaml
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\ItemPage.xaml
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\App.xbf
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\HubPage.xbf
+C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\SearchResultsPage1.xbf
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\SectionPage.xbf
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\ItemPage.xbf
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\XamlSaveStateFile.xml
@@ -82,8 +86,4 @@ C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\qualifiers.txt
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\qualifiers.txt.intermediate
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\ProjectArchitectures.txt
-C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\SearchResultsPage1.g.i.cs
-C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\SearchResultsPage1.g.cs
-C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\SearchResultsPage1.xaml
-C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\obj\Debug\SearchResultsPage1.xbf
-C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\bin\Debug\SearchResultsPage1.xbf
+C:\Users\just\Desktop\ContosoCookbook\ContosoCookbook\bin\Debug\ContosoCookbook.build.appxrecipe

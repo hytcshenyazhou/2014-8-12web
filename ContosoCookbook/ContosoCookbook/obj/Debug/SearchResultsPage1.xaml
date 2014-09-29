@@ -16,7 +16,7 @@
         <CollectionViewSource x:Name="filtersViewSource" Source="{Binding Filters}"/>
         <common:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
         <!-- TODO:  将以下字符串更新为您的应用程序的名称-->
-        <x:String x:Key="AppName">应用程序名</x:String>
+        <x:String x:Key="AppName">Search</x:String> 
     </Page.Resources>
 
     <!--
@@ -60,7 +60,7 @@
                     </ItemsControl.ItemsPanel>
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
-                            <RadioButton x:ConnectionId='1'
+                            <RadioButton x:ConnectionId='2'
                                 Margin="0,0,30,0"
                                 GroupName="Filters"
                                 IsChecked="{Binding Active, Mode=TwoWay}"
@@ -73,7 +73,7 @@
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
 
-                <GridView
+                <GridView x:ConnectionId='1'
                     x:Name="resultsGridView"
                     AutomationProperties.AutomationId="ResultsGridView"
                     AutomationProperties.Name="Search Results"
@@ -84,6 +84,7 @@
                     SelectionMode="None"
                     IsSwipeEnabled="false"
                     IsItemClickEnabled="True"
+                                           
                     ItemsSource="{Binding Source={StaticResource resultsViewSource}}">
                     <GridView.ItemTemplate>
                         <DataTemplate>
